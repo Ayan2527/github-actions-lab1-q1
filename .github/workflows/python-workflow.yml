@@ -12,7 +12,8 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.11
-
+    - name : Checkout the repo files
+      uses : actions/checkout@v3
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
